@@ -20,6 +20,7 @@
 		A064E1CE2BC5733300EBF38A /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = A064E1CD2BC5733300EBF38A /* weatherData.json */; };
 		A064E1D02BC5739D00EBF38A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1CF2BC5739D00EBF38A /* WelcomeView.swift */; };
 		A064E1D22BC573F400EBF38A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1D12BC573F400EBF38A /* LoadingView.swift */; };
+		A064E1D42BC574EE00EBF38A /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1D32BC574EE00EBF38A /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A064E1CD2BC5733300EBF38A /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
 		A064E1CF2BC5739D00EBF38A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		A064E1D12BC573F400EBF38A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A064E1D32BC574EE00EBF38A /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A064E1B12BC5704000EBF38A /* ContentView.swift */,
+				A064E1D32BC574EE00EBF38A /* WeatherView.swift */,
 				A064E1CF2BC5739D00EBF38A /* WelcomeView.swift */,
 				A064E1D12BC573F400EBF38A /* LoadingView.swift */,
 			);
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A064E1D42BC574EE00EBF38A /* WeatherView.swift in Sources */,
 				A064E1C12BC5711100EBF38A /* LocationManager.swift in Sources */,
 				A064E1BF2BC5710200EBF38A /* WeatherManager.swift in Sources */,
 				A064E1C82BC571E900EBF38A /* Double+Extension.swift in Sources */,
