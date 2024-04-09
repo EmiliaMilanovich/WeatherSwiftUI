@@ -18,6 +18,7 @@
 		A064E1CA2BC5720B00EBF38A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1C92BC5720B00EBF38A /* View+Extension.swift */; };
 		A064E1CC2BC5730400EBF38A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1CB2BC5730400EBF38A /* ModelData.swift */; };
 		A064E1CE2BC5733300EBF38A /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = A064E1CD2BC5733300EBF38A /* weatherData.json */; };
+		A064E1D02BC5739D00EBF38A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1CF2BC5739D00EBF38A /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A064E1C92BC5720B00EBF38A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		A064E1CB2BC5730400EBF38A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A064E1CD2BC5733300EBF38A /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
+		A064E1CF2BC5739D00EBF38A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				A064E1B12BC5704000EBF38A /* ContentView.swift */,
+				A064E1CF2BC5739D00EBF38A /* WelcomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				A064E1BF2BC5710200EBF38A /* WeatherManager.swift in Sources */,
 				A064E1C82BC571E900EBF38A /* Double+Extension.swift in Sources */,
 				A064E1B22BC5704000EBF38A /* ContentView.swift in Sources */,
+				A064E1D02BC5739D00EBF38A /* WelcomeView.swift in Sources */,
 				A064E1C42BC5715800EBF38A /* ResponseBody.swift in Sources */,
 				A064E1CC2BC5730400EBF38A /* ModelData.swift in Sources */,
 				A064E1CA2BC5720B00EBF38A /* View+Extension.swift in Sources */,
