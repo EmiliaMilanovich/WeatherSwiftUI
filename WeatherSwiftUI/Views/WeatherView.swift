@@ -67,19 +67,19 @@ struct WeatherView: View {
                 Spacer()
                 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Weather now")
+                    Text("Погода сейчас")
                         .bold().padding(.bottom)
                     
                     HStack {
-                        WeatherRow(logo: "thermometer", name: "Min temp", value: weather.main.tempMin.roundDouble() + "°")
+                        WeatherRow(logo: "thermometer", name: "Минимум", value: weather.main.tempMin.roundDouble() + "°")
                         Spacer()
-                        WeatherRow(logo: "thermometer", name: "Max temp", value: weather.main.tempMax.roundDouble() + "°")
+                        WeatherRow(logo: "thermometer", name: "Максимум", value: weather.main.tempMax.roundDouble() + "°")
                     }
                     
                     HStack {
-                        WeatherRow(logo: "thermometer", name: "Min temp", value: weather.main.tempMin.roundDouble() + "°")
+                        WeatherRow(logo: "wind", name: "Ветер", value: weather.wind.speed.roundDouble() + "m/s")
                         Spacer()
-                        WeatherRow(logo: "thermometer", name: "Max temp", value: weather.main.tempMax.roundDouble() + "°")
+                        WeatherRow(logo: "humidity", name: "Влажность", value: weather.main.tempMax.roundDouble() + "%")
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -91,7 +91,7 @@ struct WeatherView: View {
             }
         }
         .edgesIgnoringSafeArea(.bottom)
-        .background(Color(hue: 0.749, saturation: 0.995, brightness: 0.776))
+        .background(Color(hue: 0.111, saturation: 0.771, brightness: 1.0))
         .preferredColorScheme(.dark)
     }
 }

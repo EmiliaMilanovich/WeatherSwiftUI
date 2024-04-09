@@ -18,9 +18,11 @@ struct WelcomeView: View {
                 Text("Добро пожаловать в приложение Weather!")
                     .bold()
                     .font(.title)
+                    .shadow(radius: 40)
                 
                 Text("Пожалуйста, разрешите доступ к вашей геолокации, чтобы мы могли вам показать текущую погоду")
                     .padding()
+                    .shadow(radius: 40)
             }
             .multilineTextAlignment(.center)
             .padding()
@@ -31,6 +33,9 @@ struct WelcomeView: View {
             .cornerRadius(30)
             .symbolVariant(.fill)
             .foregroundColor(.white)
+            .opacity(30)
+            .shadow(radius: 30)
+
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
