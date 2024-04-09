@@ -16,6 +16,8 @@
 		A064E1C42BC5715800EBF38A /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1C32BC5715800EBF38A /* ResponseBody.swift */; };
 		A064E1C82BC571E900EBF38A /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1C72BC571E900EBF38A /* Double+Extension.swift */; };
 		A064E1CA2BC5720B00EBF38A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1C92BC5720B00EBF38A /* View+Extension.swift */; };
+		A064E1CC2BC5730400EBF38A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1CB2BC5730400EBF38A /* ModelData.swift */; };
+		A064E1CE2BC5733300EBF38A /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = A064E1CD2BC5733300EBF38A /* weatherData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		A064E1C32BC5715800EBF38A /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
 		A064E1C72BC571E900EBF38A /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		A064E1C92BC5720B00EBF38A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		A064E1CB2BC5730400EBF38A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		A064E1CD2BC5733300EBF38A /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				A064E1B62BC5704300EBF38A /* Preview Assets.xcassets */,
+				A064E1CB2BC5730400EBF38A /* ModelData.swift */,
+				A064E1CD2BC5733300EBF38A /* weatherData.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -173,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A064E1B72BC5704300EBF38A /* Preview Assets.xcassets in Resources */,
+				A064E1CE2BC5733300EBF38A /* weatherData.json in Resources */,
 				A064E1B42BC5704300EBF38A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +196,7 @@
 				A064E1C82BC571E900EBF38A /* Double+Extension.swift in Sources */,
 				A064E1B22BC5704000EBF38A /* ContentView.swift in Sources */,
 				A064E1C42BC5715800EBF38A /* ResponseBody.swift in Sources */,
+				A064E1CC2BC5730400EBF38A /* ModelData.swift in Sources */,
 				A064E1CA2BC5720B00EBF38A /* View+Extension.swift in Sources */,
 				A064E1B02BC5704000EBF38A /* WeatherSwiftUIApp.swift in Sources */,
 			);
