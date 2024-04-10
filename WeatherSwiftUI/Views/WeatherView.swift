@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WeatherView: View {
     var weather: ResponseBody
+    var viewModel = WeatherViewModel()
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -23,7 +24,7 @@ struct WeatherView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Spacer()
-                
+
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
@@ -50,12 +51,12 @@ struct WeatherView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 350)
+                            .shadow(radius: 20)
                     } placeholder: {
                         ProgressView()
                     }
                     
                     Spacer()
-                    
                 }
                 .frame(maxWidth: .infinity)
                 
@@ -91,7 +92,10 @@ struct WeatherView: View {
             }
         }
         .edgesIgnoringSafeArea(.bottom)
-        .background(Color(hue: 0.111, saturation: 0.771, brightness: 1.0))
+        .background(viewModel.isDay(
+            sunrise: weather.sys.sunriseDate,
+            sunset: weather.sys.sunsetDate
+        ) ? Color(hue: 0.111, saturation: 0.771, brightness: 1.0) : Color(hue: 0.711, saturation: 1.0, brightness: 0.4))
         .preferredColorScheme(.dark)
     }
 }

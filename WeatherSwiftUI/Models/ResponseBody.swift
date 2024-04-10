@@ -13,6 +13,7 @@ struct ResponseBody: Decodable {
     var main: MainResponse
     var name: String
     var wind: WindResponse
+    var sys: SunResponse
     
     struct CoordinatesResponse: Decodable {
         var lon: Double
@@ -39,10 +40,24 @@ struct ResponseBody: Decodable {
         var speed: Double
         var deg: Double
     }
+    
+    struct SunResponse: Decodable {
+        var sunrise: Double
+        var sunset: Double
+    }
 }
 
 extension ResponseBody.MainResponse {
     var feelsLike: Double { return feels_like }
     var tempMin: Double { return temp_min }
     var tempMax: Double { return temp_max }
+}
+
+extension ResponseBody.SunResponse {
+    var sunriseDate: Date {
+        NSDate(timeIntervalSince1970: sunrise) as Date
+    }
+    var sunsetDate: Date {
+        NSDate(timeIntervalSince1970: sunset) as Date
+    }
 }
