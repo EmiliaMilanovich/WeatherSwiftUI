@@ -39,7 +39,8 @@ struct ContentView: View {
                 }
             }
         }
-        .background(Color(hue: 0.749, saturation: 0.995, brightness: 0.776))
+        .background(AnimatedGradient(colors: [.cyan, .orange]))
+        .ignoresSafeArea()
         .preferredColorScheme(.dark)
     }
 }
