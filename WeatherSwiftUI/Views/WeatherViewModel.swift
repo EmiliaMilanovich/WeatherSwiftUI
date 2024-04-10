@@ -15,4 +15,16 @@ final class WeatherViewModel: ObservableObject {
             return false
         }
     }
+    
+    func changeImageConditions(condition: String) -> String {
+        switch condition.lowercased() {
+        case "thunderstorm": return "cloud.bolt.rain"
+        case "drizzle": return "cloud.drizzle"
+        case "rain": return "cloud.rain"
+        case "snow": return "cloud.snow"
+        case "clear": return "sun.max"
+        case "clouds": return "cloud"
+        default: return "smoke"
+        }
+    }
 }

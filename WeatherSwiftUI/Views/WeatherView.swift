@@ -28,7 +28,7 @@ struct WeatherView: View {
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
-                            Image(systemName: "sun.max")
+                            Image(systemName: viewModel.changeImageConditions(condition: weather.weather[0].main))
                                 .font(.system(size: 40))
                             
                             Text(weather.weather[0].main)
