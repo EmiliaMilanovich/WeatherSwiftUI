@@ -14,7 +14,7 @@ struct WeatherRow: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            Image(systemName: logo)
+            Image(logo)
                 .font(.title2)
                 .frame(width: 20, height: 20)
                 .padding()
@@ -35,6 +35,6 @@ struct WeatherRow: View {
 
 struct WeatherRow_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherRow(logo: "thermometer", name: "Feels like", value: "8°")
+        WeatherRow(logo: "thermometer.high", name: "Feels like", value: "8°")
     }
 }
