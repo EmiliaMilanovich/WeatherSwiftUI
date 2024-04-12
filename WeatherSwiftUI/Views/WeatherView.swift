@@ -9,8 +9,8 @@ import SwiftUI
 
 struct WeatherView: View {
     var weather: ResponseBody
-    var viewModel = WeatherViewModel()
-    
+    var weatherManager = WeatherManager()
+
     var body: some View {
         ZStack(alignment: .leading) {
             VStack {
@@ -18,17 +18,17 @@ struct WeatherView: View {
                     Text(weather.name)
                         .bold()
                         .font(.title)
-                    Text("Today, \(Date().formatted(.dateTime.month().day().hour().minute()))")
+                    Text("Сейчас, \(Date().formatted(.dateTime.month().day().hour().minute()))")
                         .fontWeight(.light)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Spacer()
-
+                
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
-                            Image(systemName: viewModel.changeImageConditions(condition: weather.weather[0].main))
+                            Image(systemName: weatherManager.changeImageConditions(condition: weather.weather[0].main))
                                 .font(.system(size: 40))
                             
                             Text(weather.weather[0].main)
@@ -44,7 +44,7 @@ struct WeatherView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 80)
+                        .frame(height: 40)
                     
                     AsyncImage(url: URL(string: "https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-nadpisi-gorodov-na-prozrachnom-fone-39.png")) { image in
                         image
@@ -62,6 +62,7 @@ struct WeatherView: View {
                 
             }
             .padding()
+            .padding(.top, 50)
             .frame(maxWidth: .infinity, alignment: .leading)
             
             VStack {
@@ -72,9 +73,9 @@ struct WeatherView: View {
                         .bold().padding(.bottom)
                     
                     HStack {
-                        WeatherRow(logo: "thermometer", name: "Минимум", value: weather.main.tempMin.roundDouble() + "°")
+                        WeatherRow(logo: "thermometer.low", name: "Минимум", value: weather.main.tempMin.roundDouble() + "°")
                         Spacer()
-                        WeatherRow(logo: "thermometer", name: "Максимум", value: weather.main.tempMax.roundDouble() + "°")
+                        WeatherRow(logo: "thermometer.high", name: "Максимум", value: weather.main.tempMax.roundDouble() + "°")
                     }
                     
                     HStack {
@@ -92,7 +93,7 @@ struct WeatherView: View {
             }
         }
         .edgesIgnoringSafeArea(.bottom)
-        .background(viewModel.isDay(
+        .background(weatherManager.isDay(
             sunrise: weather.sys.sunriseDate,
             sunset: weather.sys.sunsetDate
         ) ? Color(hue: 0.111, saturation: 0.771, brightness: 1.0) : Color(hue: 0.711, saturation: 1.0, brightness: 0.4))
