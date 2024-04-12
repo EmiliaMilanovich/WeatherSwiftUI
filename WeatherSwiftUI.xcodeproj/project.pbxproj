@@ -24,7 +24,6 @@
 		A064E1D72BC5759000EBF38A /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1D62BC5759000EBF38A /* WeatherRow.swift */; };
 		A064E1DA2BC57A1F00EBF38A /* AnimatedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1D92BC57A1F00EBF38A /* AnimatedGradient.swift */; };
 		A064E1DC2BC6EE5700EBF38A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1DB2BC6EE5700EBF38A /* Date+Extension.swift */; };
-		A064E1DE2BC6F33200EBF38A /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064E1DD2BC6F33200EBF38A /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +45,6 @@
 		A064E1D62BC5759000EBF38A /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
 		A064E1D92BC57A1F00EBF38A /* AnimatedGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradient.swift; sourceTree = "<group>"; };
 		A064E1DB2BC6EE5700EBF38A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		A064E1DD2BC6F33200EBF38A /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +120,6 @@
 			children = (
 				A064E1B12BC5704000EBF38A /* ContentView.swift */,
 				A064E1D32BC574EE00EBF38A /* WeatherView.swift */,
-				A064E1DD2BC6F33200EBF38A /* WeatherViewModel.swift */,
 				A064E1CF2BC5739D00EBF38A /* WelcomeView.swift */,
 				A064E1D12BC573F400EBF38A /* LoadingView.swift */,
 				A064E1D52BC5757100EBF38A /* Components */,
@@ -238,7 +235,6 @@
 				A064E1B22BC5704000EBF38A /* ContentView.swift in Sources */,
 				A064E1D02BC5739D00EBF38A /* WelcomeView.swift in Sources */,
 				A064E1C42BC5715800EBF38A /* ResponseBody.swift in Sources */,
-				A064E1DE2BC6F33200EBF38A /* WeatherViewModel.swift in Sources */,
 				A064E1CC2BC5730400EBF38A /* ModelData.swift in Sources */,
 				A064E1DC2BC6EE5700EBF38A /* Date+Extension.swift in Sources */,
 				A064E1CA2BC5720B00EBF38A /* View+Extension.swift in Sources */,

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct WeatherView: View {
     var weather: ResponseBody
-    var viewModel = WeatherViewModel()
-    
+    var weatherManager = WeatherManager()
+
     var body: some View {
         ZStack(alignment: .leading) {
             VStack {
@@ -28,7 +28,7 @@ struct WeatherView: View {
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
-                            Image(systemName: viewModel.changeImageConditions(condition: weather.weather[0].main))
+                            Image(systemName: weatherManager.changeImageConditions(condition: weather.weather[0].main))
                                 .font(.system(size: 40))
                             
                             Text(weather.weather[0].main)
@@ -93,7 +93,7 @@ struct WeatherView: View {
             }
         }
         .edgesIgnoringSafeArea(.bottom)
-        .background(viewModel.isDay(
+        .background(weatherManager.isDay(
             sunrise: weather.sys.sunriseDate,
             sunset: weather.sys.sunsetDate
         ) ? Color(hue: 0.111, saturation: 0.771, brightness: 1.0) : Color(hue: 0.711, saturation: 1.0, brightness: 0.4))
