@@ -2,6 +2,12 @@
 
 <img src="https://i.postimg.cc/1XGhBYNX/Simulator-Screen-Shot-i-Phone-14-Pro-2024-04-12-at-16-56-10.png" width="200" /> <img src="https://i.postimg.cc/Hk2Wdjnn/Simulator-Screen-Shot-i-Phone-14-Pro-2024-04-12-at-16-14-19.png" width="200" /> <img src="https://i.postimg.cc/85k17GF4/Simulator-Screen-Shot-i-Phone-14-Pro-2024-04-12-at-02-34-57.png" width="200" /> 
 
+# Стек
+- Swift
+- SwiftUI
+- MVVM
+- CoreLocation
+
 # Ссылки
 
 [Weather API](https://openweathermap.org/api)
