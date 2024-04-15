@@ -7,6 +7,7 @@
 - SwiftUI
 - MVVM
 - CoreLocation
+- Async/Await
 
 # Ссылки
 
